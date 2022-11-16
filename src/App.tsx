@@ -1,5 +1,7 @@
+import Temperature from "./components/Temperature";
+
 function App() {
-  return <div>noting here!</div>;
+  return <Temperature init={10} />;
 }
 
 export default App;
