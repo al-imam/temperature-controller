@@ -1,0 +1,59 @@
+:root {
+  --card-bg: 94, 53, 177;
+  --button-bg: 99, 102, 241;
+  --text-color: white;
+}
+
+.card {
+  width: clamp(320px, 90%, 840px);
+  height: 504px;
+  background-color: rgb(var(--card-bg));
+  margin: 0 auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  box-shadow: 4px 4px 8px rgba(var(--card-bg), 0.3);
+}
+
+.circle {
+  width: 160px;
+  height: 160px;
+  border: 3px solid white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background-color: var(--color-code, white);
+}
+
+.text {
+  font-size: 2.5rem;
+  color: var(--text-color);
+}
+
+.buttons {
+  display: flex;
+  gap: 32px;
+}
+
+.button {
+  padding: 8px 16px;
+  transition: transform 200ms ease;
+  border-radius: 2px;
+  background-color: rgb(var(--button-bg));
+  font-family: Sans-Serif;
+  font-size: 1rem;
+  color: var(--text-color);
+  box-shadow: 1px 1px 5px rgba(var(--button-bg), 0.7);
+}
+
+.button:hover {
+  filter: brightness(1.1);
+}
+
+.button:focus {
+  filter: brightness(1.1);
+  transform: translateY(3px);
+}
