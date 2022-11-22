@@ -39,21 +39,23 @@
 }
 
 .button {
-  padding: 8px 16px;
-  transition: transform 200ms ease;
-  border-radius: 2px;
-  background-color: rgb(var(--button-bg));
-  font-family: Sans-Serif;
   font-size: 1rem;
+  padding: 0.5rem 1rem;
   color: var(--text-color);
+  background-color: rgb(var(--button-bg));
   box-shadow: 1px 1px 5px rgba(var(--button-bg), 0.7);
+  border: none;
+  outline: 1px solid var(--gray-4);
+  border-radius: 0.5rem;
+  transition: transform 200ms ease;
 }
 
 .button:hover {
-  filter: brightness(1.1);
+  filter: brightness(0.9);
 }
 
 .button:focus {
-  filter: brightness(1.1);
+  outline-offset: 2px;
+  filter: brightness(1.2);
   transform: translateY(3px);
 }
